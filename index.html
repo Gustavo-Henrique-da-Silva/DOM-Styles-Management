@@ -1,0 +1,721 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" type="text/css" href="style.css">
+    <link rel="stylesheet" type="text/css" href="bootstrap.min.css">
+
+    <!--Folder Model-->
+
+    <script type="text/javascript" src="js/Model/alterHeader.js"></script>
+    <script type="text/javascript" src="js/Model/alterParagrafy.js"></script>
+    <script type="text/javascript" src="js/Model/alterOrdenedList.js"></script>
+    <script type="text/javascript" src="js/Model/alterUnordenedList.js"></script>
+    <script type="text/javascript" src="js/Model/alterButton.js"></script>
+    <script type="text/javascript" src="js/Model/alterTable.js"></script>
+    <script type="text/javascript" src="js/Model/alterForm.js"></script>
+    <script type="text/javascript" src="js/Model/alterDiv.js"></script>
+    <script type="text/javascript" src="js/Model/alterNav.js"></script>
+    <script type="text/javascript" src="js/Model/alterMain.js"></script>
+    <script type="text/javascript" src="js/Model/alterBody.js"></script>
+    <script type="text/javascript" src="js/Model/alterElement.js"></script>
+
+    <!--Folder JS-->
+    <script defer type="text/javascript" src="js/jquery-3.6.3.min.js"></script>
+    <script type="text/javascript" src="js/bootstrap.min.js"></script>
+    <script defer type="text/javascript" src="js/main.js"></script>
+    
+
+    <title>Dark Mode & Light Mode DOM</title>
+    <nav class="navbar bg-white" id="navAlter" >
+        <div class="container-fluid">
+          <a class="navbar-brand" id="brand">Navbar</a>
+          <div class="d-flex" role="search">
+            
+          </div>
+        </div>
+      </nav>
+</head>
+<body id="bodyAlter">
+  </br>
+</br>
+</br>
+
+<!--Elements Alter IDs: h1Alter, pAlter, olAlter, ulAlter, buttonAlter, tableAlter, formAlter, divAlter, navAlter, mainAlter, bodyAlter-->
+
+<main id="mainAlter">
+ <h1>Test</h1>
+</main>
+  <div id="divAlter">
+    <h1 id="h1Alter">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</h1>
+    <p id="pAlter">Consequat interdum varius sit amet mattis vulputate. Odio ut enim blandit volutpat maecenas volutpat.</p>
+    <ol id="olAlter">
+      <li>In mollis nunc sed id semper. Dignissim suspendisse in est ante in.</li>
+      <li>Facilisis magna etiam tempor orci. Sed faucibus turpis in eu mi bibendum neque egestas.</li>
+      <li> Justo nec ultrices dui sapien eget mi proin. Tristique senectus et netus et.</li>
+    </ol>
+    <ul id="ulAlter">
+      <li>In mollis nunc sed id semper. Dignissim suspendisse in est ante in.</li>
+      <li>Facilisis magna etiam tempor orci. Sed faucibus turpis in eu mi bibendum neque egestas.</li>
+      <li> Justo nec ultrices dui sapien eget mi proin. Tristique senectus et netus et.</li>
+    </ul>
+  </div>
+
+  <table class="table" id="tableAlter">
+    <thead>
+      <tr>
+        <th scope="col">#</th>
+        <th scope="col">First</th>
+        <th scope="col">Last</th>
+        <th scope="col">Handle</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <th scope="row">1</th>
+        <td>Mark</td>
+        <td>Otto</td>
+        <td>@mdo</td>
+      </tr>
+      <tr>
+        <th scope="row">2</th>
+        <td>Jacob</td>
+        <td>Thornton</td>
+        <td>@fat</td>
+      </tr>
+      <tr>
+        <th scope="row">3</th>
+        <td colspan="2">Larry the Bird</td>
+        <td>@twitter</td>
+      </tr>
+    </tbody>
+  </table>
+
+  <form id="formAlter">
+    <fieldset disabled>
+      <legend>Disabled fieldset example</legend>
+      <div class="mb-3">
+        <label for="disabledTextInput" class="form-label">Disabled input</label>
+        <input type="text" id="disabledTextInput" class="form-control" placeholder="Disabled input">
+      </div>
+      <div class="mb-3">
+        <label for="disabledSelect" class="form-label">Disabled select menu</label>
+        <select id="disabledSelect" class="form-select">
+          <option>Disabled select</option>
+        </select>
+      </div>
+      <div class="mb-3">
+        <div class="form-check">
+          <input class="form-check-input" type="checkbox" id="disabledFieldsetCheck" disabled>
+          <label class="form-check-label" for="disabledFieldsetCheck">
+            Can't check this
+          </label>
+        </div>
+      </div>
+      <button type="submit" id="buttonAlter" class="btn btn-primary">Submit</button>
+    </fieldset>
+  </form>
+<!--Items: Color, Background-Color, Cursor, Border, Font-Familly, Padding, Width, Inner, Specific -->
+
+
+<div class="container" id="myGroup">
+  <div class="container text-center" style="margin: 10px;">
+    <div class="row row-cols-auto">
+      <div class="col">
+        <button class="btn btn-outline-primary" data-bs-toggle="collapse" data-bs-target="#Color" id="BColor"  >Color</button>
+      </div>
+      <div class="col">
+        <button class="btn btn-outline-primary"  data-bs-toggle="collapse"  data-bs-target="#BgColor"  id="BGColor">Bg-Color</button>
+      </div>
+      <div class="col">
+        <button class="btn btn-outline-primary" data-bs-toggle="collapse" data-bs-target="#Cursor" id="BCursor">Cursor</button>
+      </div>
+      <div class="col">
+        <button class="btn btn-outline-primary" data-bs-toggle="collapse" data-bs-target="#Border" id="BBorder">Border</button>
+      </div>
+      <div class="col">
+        <button class="btn btn-outline-primary" data-bs-toggle="collapse" data-bs-target="#fontFamilly" id="BFont">fontFamilly</button>
+      </div>
+      <div class="col">
+        <button class="btn btn-outline-primary" data-bs-toggle="collapse" data-bs-target="#Padding" id="BPadding">Padding</button>
+      </div>
+      <div class="col">
+        <button class="btn btn-outline-primary" data-bs-toggle="collapse" data-bs-target="#Width" id="BWidth">Width</button>
+      </div>
+      <div class="col">
+        <button class="btn btn-outline-primary" data-bs-toggle="collapse" data-bs-target="#Inner" id="BInner">InnerHTML</button>
+      </div>
+      <div class="col">
+        <button class="btn btn-outline-primary" data-bs-toggle="collapse" data-bs-target="#Specific" id="BSpecificStyle">Specific Style</button>
+      </div>
+      <p>elements available: h1Alter, pAlter, olAlter, ulAlter, buttonAlter, tableAlter, formAlter, divAlter, navAlter, mainAlter, bodyAlter</p>
+    </div>
+  </div>
+</br>
+</br>
+</br>
+
+<!--Ids Sequence of Inputs: Header, Paragrafy, Ordened List, Unordened List, Table, Form, Div, Nav, Main, Body, Determined Element (X)-->
+<!--Div Color Ids of Buttons (Classes): button-header-one, button-paragrafy, button-ordened-list, button-unordened-list, button-button
+   button-table, button-form, button-div, button-nav, button-main, button-body, button-element-->
+
+<!--Div Color Ids of Inputs: MCH1, MCP, MCOL, MCUL, MCBT MCT, MCF, MCD, MCN, MCM, MCB, MCX-->
+  
+    <div class="collapse indent" data-bs-parent="#myGroup" id="Color">
+      <div class="d-flex" role="search" style="margin: 10px;">
+        <input class="form-control me-2" type="search" id="MCH1" placeholder="color-name or hexa-value">
+        <button class="btn btn-outline-success button-header-one">Alter H1</button>
+      </div>
+
+
+      <div class="d-flex" role="search" style="margin: 10px;">
+        <input class="form-control me-2" type="search"  id="MCP" placeholder="color-name or hexa-value">
+        <button class="btn btn-outline-success button-paragrafy">Alter paragrafy</button>
+      </div>
+
+      <div class="d-flex" role="search" style="margin: 10px;">
+        <input class="form-control me-2" type="search"  id="MCOL" placeholder="color-name or hexa-value" >
+        <button class="btn btn-outline-success button-ordened-list" onclick="">Alter Ordened List</button>
+      </div>
+
+      <div class="d-flex" role="search" style="margin: 10px;">
+        <input class="form-control me-2" type="search"  id="MCUL" placeholder="color-name or hexa-value">
+        <button class="btn btn-outline-success button-unordened-list" onclick="">Alter Unordened List</button>
+      </div>
+      <div class="d-flex" role="search" style="margin: 10px;">
+        <input class="form-control me-2" type="search"  id="MCBT" placeholder="color-name or hexa-value">
+        <button class="btn btn-outline-success button-button" onclick="">Alter Button</button>
+      </div>
+      <div class="d-flex" role="search" style="margin: 10px;">
+        <input class="form-control me-2" type="search"  id="MCT" placeholder="color-name or hexa-value">
+        <button class="btn btn-outline-success button-table" onclick="">Alter Table</button>
+      </div>
+      <div class="d-flex" role="search" style="margin: 10px;">
+        <input class="form-control me-2" type="search"  id="MCF" placeholder="color-name or hexa-value">
+        <button class="btn btn-outline-success button-form" onclick="">Alter Form</button>
+      </div>
+      <div class="d-flex" role="search" style="margin: 10px;">
+        <input class="form-control me-2" type="search"  id="MCD" placeholder="color-name or hexa-value">
+        <button class="btn btn-outline-success button-div" onclick="">Alter Div</button>
+      </div>
+      <div class="d-flex" role="search" style="margin: 10px;">
+        <input class="form-control me-2" type="search"  id="MCN" placeholder="color-name or hexa-value">
+        <button class="btn btn-outline-success button-nav" onclick="">Alter Nav</button>
+      </div>
+      <div class="d-flex" role="search" style="margin: 10px;">
+        <input class="form-control me-2" type="search"  id="MCM" placeholder="color-name or hexa-value">
+        <button class="btn btn-outline-success button-main" onclick="">Alter Main</button>
+      </div>
+  
+      <div class="d-flex" role="search" style="margin: 10px;">
+        <input class="form-control me-2" type="search"  id="MCB" placeholder="color-name or hexa-value">
+        <button class="btn btn-outline-success button-body" onclick="">Alter Body</button>
+      </div>
+
+      <div class="d-flex" role="search" style="margin: 10px;">
+        <input class="form-control me-2" type="search" placeholder="element  value" id="MCX">
+        <button class="btn btn-outline-success button-element" onclick="">Alter X Element</button>
+      </div>
+      <p>elements available: h1Alter, pAlter, olAlter, ulAlter, buttonAlter, tableAlter, formAlter, divAlter, navAlter, mainAlter, bodyAlter</p>
+  </div>
+
+<!--Main BackGround Color-->
+
+<!--Div Background-Color Ids of Inputs: MBCH1, MBCP, MBCOL, MBCUL, MBBTN, MBCT, MBCF, MBCD, MBCN, MBCM, MBCB, MBCX-->
+  <div class="collapse indent" data-bs-parent="#myGroup" id="BgColor">
+    <div class="d-flex" role="search" style="margin: 10px;" placeholder="color-name or hexadecimal-value">
+        <input class="form-control me-2" type="search" id="MBCH1">
+        <button class="btn btn-outline-success button-header-one">Alter H1</button>
+      </div>
+
+
+      <div class="d-flex" role="search" style="margin: 10px;">
+        <input class="form-control me-2" type="search"  id="MBCP" placeholder="color-name or hexa-value">
+        <button class="btn btn-outline-success button-paragrafy">Alter paragrafy</button>
+      </div>
+
+      <div class="d-flex" role="search" style="margin: 10px;">
+        <input class="form-control me-2" type="search"  id="MBCOL" placeholder="color-name or hexa-value" >
+        <button class="btn btn-outline-success button-ordened-list" onclick="">Alter Ordened List</button>
+      </div>
+
+      <div class="d-flex" role="search" style="margin: 10px;">
+        <input class="form-control me-2" type="search"  id="MBCUL" placeholder="color-name or hexa-value">
+        <button class="btn btn-outline-success button-unordened-list" onclick="">Alter Unordened List</button>
+      </div>
+      <div class="d-flex" role="search" style="margin: 10px;">
+        <input class="form-control me-2" type="search"  id="MBBTN" placeholder="color-name or hexa-value">
+        <button class="btn btn-outline-success button-button" onclick="">Alter Button</button>
+      </div>
+      <div class="d-flex" role="search" style="margin: 10px;">
+        <input class="form-control me-2" type="search"  id="MBCT" placeholder="color-name or hexa-value">
+        <button class="btn btn-outline-success button-table" onclick="">Alter Table</button>
+      </div>
+      <div class="d-flex" role="search" style="margin: 10px;">
+        <input class="form-control me-2" type="search"  id="MBCF" placeholder="color-name or hexa-value">
+        <button class="btn btn-outline-success button-form" onclick="">Alter Form</button>
+      </div>
+      <div class="d-flex" role="search" style="margin: 10px;">
+        <input class="form-control me-2" type="search"  id="MBCD" placeholder="color-name or hexa-value">
+        <button class="btn btn-outline-success button-div" onclick="">Alter Div</button>
+      </div>
+      <div class="d-flex" role="search" style="margin: 10px;">
+        <input class="form-control me-2" type="search"  id="MBCN" placeholder="color-name or hexa-value">
+        <button class="btn btn-outline-success button-nav" onclick="">Alter Nav</button>
+      </div>
+      <div class="d-flex" role="search" style="margin: 10px;">
+        <input class="form-control me-2" type="search"  id="MBCM" placeholder="color-name or hexa-value">
+        <button class="btn btn-outline-success button-main" onclick="">Alter Main</button>
+      </div>
+  
+      <div class="d-flex" role="search" style="margin: 10px;">
+        <input class="form-control me-2" type="search"  id="MBCB" placeholder="color-name or hexa-value">
+        <button class="btn btn-outline-success button-body" onclick="">Alter Body</button>
+      </div>
+
+      <div class="d-flex" role="search" style="margin: 10px;">
+        <input class="form-control me-2" type="search" placeholder="element  value" id="MBCX">
+        <button class="btn btn-outline-success button-element" onclick="">Alter X Element</button>
+      </div>
+      <p>elements available: h1Alter, pAlter, olAlter, ulAlter, buttonAlter, tableAlter, formAlter, divAlter, navAlter, mainAlter, bodyAlter</p>
+  </div>
+
+  <!--Main Mouse Cursor-->
+
+  <!--Div Cursor Ids of Inputs: MMCH1, MMCP, MMCOL, MMCUL, MMCBT, MMCT, MMCF, MMCD, MMCN, MMCM, MMCB, MMCX-->
+  <div class="collapse indent" data-bs-parent="#myGroup" id="Cursor">
+    <div class="d-flex" role="search" style="margin: 10px;" placeholder="cursor form">
+        <input class="form-control me-2" type="search" id="MMCH1">
+        <button class="btn btn-outline-success button-header-one">Alter H1</button>
+      </div>
+
+
+      <div class="d-flex" role="search" style="margin: 10px;">
+        <input class="form-control me-2" type="search"  id="MMCP" placeholder="cursor form">
+        <button class="btn btn-outline-success button-paragrafy">Alter paragrafy</button>
+      </div>
+
+      <div class="d-flex" role="search" style="margin: 10px;">
+        <input class="form-control me-2" type="search"  id="MMCOL" placeholder="cursor form" >
+        <button class="btn btn-outline-success button-ordened-list" onclick="">Alter Ordened List</button>
+      </div>
+
+      <div class="d-flex" role="search" style="margin: 10px;">
+        <input class="form-control me-2" type="search"  id="MMCUL" placeholder="cursor form">
+        <button class="btn btn-outline-success button-unordened-list" onclick="">Alter Unordened List</button>
+      </div>
+      <div class="d-flex" role="search" style="margin: 10px;">
+        <input class="form-control me-2" type="search"  id="MMCBT" placeholder="cursor form">
+        <button class="btn btn-outline-success button-button" onclick="">Alter Button</button>
+      </div>
+      <div class="d-flex" role="search" style="margin: 10px;">
+        <input class="form-control me-2" type="search"  id="MMCT" placeholder="cursor form">
+        <button class="btn btn-outline-success button-table" onclick="">Alter Table</button>
+      </div>
+      <div class="d-flex" role="search" style="margin: 10px;">
+        <input class="form-control me-2" type="search"  id="MMCF" placeholder="cursor form">
+        <button class="btn btn-outline-success button-form" onclick="">Alter Form</button>
+      </div>
+      <div class="d-flex" role="search" style="margin: 10px;">
+        <input class="form-control me-2" type="search"  id="MMCD" placeholder="cursor form">
+        <button class="btn btn-outline-success button-div" onclick="">Alter Div</button>
+      </div>
+      <div class="d-flex" role="search" style="margin: 10px;">
+        <input class="form-control me-2" type="search"  id="MMCN" placeholder="cursor form">
+        <button class="btn btn-outline-success button-nav" onclick="">Alter Nav</button>
+      </div>
+      <div class="d-flex" role="search" style="margin: 10px;">
+        <input class="form-control me-2" type="search"  id="MMCM" placeholder="cursor form">
+        <button class="btn btn-outline-success button-main" onclick="">Alter Main</button>
+      </div>
+  
+      <div class="d-flex" role="search" style="margin: 10px;">
+        <input class="form-control me-2" type="search"  id="MMCB" placeholder="cursor form">
+        <button class="btn btn-outline-success button-body" onclick="">Alter Body</button>
+      </div>
+
+      <div class="d-flex" role="search" style="margin: 10px;">
+        <input class="form-control me-2" type="search" placeholder="element  value" id="MMCX">
+        <button class="btn btn-outline-success button-element" onclick="">Alter X Element</button>
+      </div>
+      <p>elements available: h1Alter, pAlter, olAlter, ulAlter, buttonAlter, tableAlter, formAlter, divAlter, navAlter, mainAlter, bodyAlter</p>
+  </div>
+
+  <!--Main Border-->
+
+<!--Div Border Ids of Inputs: MBH1, MBP, MBOL, MBUL, MBBT, MBT, MBF, MBD, MBN, MBM, MBB, MBX-->
+  <div class="collapse indent" data-bs-parent="#myGroup" id="Border">
+    <div class="d-flex" role="search" style="margin: 10px;" placeholder="style border color">
+      <input class="form-control me-2" type="search" id="MBH1">
+      <button class="btn btn-outline-success button-header-one">Alter H1</button>
+    </div>
+
+
+    <div class="d-flex" role="search" style="margin: 10px;">
+      <input class="form-control me-2" type="search"  id="MBP" placeholder="style border color">
+      <button class="btn btn-outline-success button-paragrafy">Alter paragrafy</button>
+    </div>
+
+    <div class="d-flex" role="search" style="margin: 10px;">
+      <input class="form-control me-2" type="search"  id="MBOL" placeholder="style border color" >
+      <button class="btn btn-outline-success button-ordened-list" onclick="">Alter Ordened List</button>
+    </div>
+    <div class="d-flex" role="search" style="margin: 10px;">
+      <input class="form-control me-2" type="search"  id="MBRBT" placeholder="style border color">
+      <button class="btn btn-outline-success button-button" onclick="">Alter Button</button>
+    </div>
+    <div class="d-flex" role="search" style="margin: 10px;">
+      <input class="form-control me-2" type="search"  id="MBUL" placeholder="style border color">
+      <button class="btn btn-outline-success button-unordened-list" onclick="">Alter Unordened List</button>
+    </div>
+    <div class="d-flex" role="search" style="margin: 10px;">
+      <input class="form-control me-2" type="search"  id="MBBT" placeholder="style border color">
+      <button class="btn btn-outline-success button-button" onclick="">Alter Button</button>
+    </div>
+    <div class="d-flex" role="search" style="margin: 10px;">
+      <input class="form-control me-2" type="search"  id="MBT" placeholder="style border color">
+      <button class="btn btn-outline-success button-table" onclick="">Alter Table</button>
+    </div>
+    <div class="d-flex" role="search" style="margin: 10px;">
+      <input class="form-control me-2" type="search"  id="MBF" placeholder="style border color">
+      <button class="btn btn-outline-success button-form" onclick="">Alter Form</button>
+    </div>
+    <div class="d-flex" role="search" style="margin: 10px;">
+      <input class="form-control me-2" type="search"  id="MBD" placeholder="style border color">
+      <button class="btn btn-outline-success button-div" onclick="">Alter Div</button>
+    </div>
+    <div class="d-flex" role="search" style="margin: 10px;">
+      <input class="form-control me-2" type="search"  id="MBN" placeholder="style border color">
+      <button class="btn btn-outline-success button-nav" onclick="">Alter Nav</button>
+    </div>
+    <div class="d-flex" role="search" style="margin: 10px;">
+      <input class="form-control me-2" type="search"  id="MBM" placeholder="style border color">
+      <button class="btn btn-outline-success button-main" onclick="">Alter Main</button>
+    </div>
+
+    <div class="d-flex" role="search" style="margin: 10px;">
+      <input class="form-control me-2" type="search"  id="MBB" placeholder="style border color">
+      <button class="btn btn-outline-success button-body" onclick="">Alter Body</button>
+    </div>
+
+    <div class="d-flex" role="search" style="margin: 10px;">
+      <input class="form-control me-2" type="search" placeholder="element  value" id="MBX">
+      <button class="btn btn-outline-success button-element" onclick="">Alter X Element</button>
+    </div>
+    <p>elements available: h1Alter, pAlter, olAlter, ulAlter, buttonAlter, tableAlter, formAlter, divAlter, navAlter, mainAlter, bodyAlter</p>
+</div>
+
+
+  <!--Main font-Family-->
+
+<!--Div Fonts Ids of Inputs: MFH1, MFP, MFOL, MFUL, MFBT, MFT, MFF, MFD, MFN, MFM, MFB, MFX-->
+  <div class="collapse indent" data-bs-parent="#myGroup" id="fontFamilly">
+    <div class="d-flex" role="search" style="margin: 10px;" placeholder="font style size">
+        <input class="form-control me-2" type="search" id="MFH1">
+        <button class="btn btn-outline-success button-header-one">Alter H1</button>
+      </div>
+
+
+      <div class="d-flex" role="search" style="margin: 10px;">
+        <input class="form-control me-2" type="search"  id="MFP" placeholder="font style size">
+        <button class="btn btn-outline-success button-paragrafy">Alter paragrafy</button>
+      </div>
+
+      <div class="d-flex" role="search" style="margin: 10px;">
+        <input class="form-control me-2" type="search"  id="MFOL" placeholder="font style size" >
+        <button class="btn btn-outline-success button-ordened-list" onclick="">Alter Ordened List</button>
+      </div>
+
+      <div class="d-flex" role="search" style="margin: 10px;">
+        <input class="form-control me-2" type="search"  id="MFUL" placeholder="font style size">
+        <button class="btn btn-outline-success button-unordened-list" onclick="">Alter Unordened List</button>
+      </div>
+      <div class="d-flex" role="search" style="margin: 10px;">
+        <input class="form-control me-2" type="search"  id="MFBT" placeholder="font style size">
+        <button class="btn btn-outline-success button-button" onclick="">Alter Button</button>
+      </div>
+      <div class="d-flex" role="search" style="margin: 10px;">
+        <input class="form-control me-2" type="search"  id="MFT" placeholder="font style size">
+        <button class="btn btn-outline-success button-table" onclick="">Alter Table</button>
+      </div>
+      <div class="d-flex" role="search" style="margin: 10px;">
+        <input class="form-control me-2" type="search"  id="MFF" placeholder="font style size">
+        <button class="btn btn-outline-success button-form" onclick="">Alter Form</button>
+      </div>
+      <div class="d-flex" role="search" style="margin: 10px;">
+        <input class="form-control me-2" type="search"  id="MFD" placeholder="font style size">
+        <button class="btn btn-outline-success button-div" onclick="">Alter Div</button>
+      </div>
+      <div class="d-flex" role="search" style="margin: 10px;">
+        <input class="form-control me-2" type="search"  id="MFN" placeholder="font style size">
+        <button class="btn btn-outline-success button-nav" onclick="">Alter Nav</button>
+      </div>
+      <div class="d-flex" role="search" style="margin: 10px;">
+        <input class="form-control me-2" type="search"  id="MFM" placeholder="font style size">
+        <button class="btn btn-outline-success button-main" onclick="">Alter Main</button>
+      </div>
+  
+      <div class="d-flex" role="search" style="margin: 10px;">
+        <input class="form-control me-2" type="search"  id="MFB" placeholder="font style size">
+        <button class="btn btn-outline-success button-body" onclick="">Alter Body</button>
+      </div>
+
+      <div class="d-flex" role="search" style="margin: 10px;">
+        <input class="form-control me-2" type="search" placeholder="element  value" id="MFX">
+        <button class="btn btn-outline-success button-element" onclick="">Alter X Element</button>
+      </div>
+      <p>elements available: h1Alter, pAlter, olAlter, ulAlter, buttonAlter, tableAlter, formAlter, divAlter, navAlter, mainAlter, bodyAlter</p>
+  </div>
+
+  <!--Main Padding-->
+
+<!--Div Padding Ids of Inputs: MPH1, MPP, MPOL, MPUL, MPBT, MPT, MPF, MPD, MPN, MPM, MPB, MPX-->
+  <div class="collapse indent" data-bs-parent="#myGroup" id="Padding">
+    <div class="d-flex" role="search" style="margin: 10px;" placeholder="size">
+        <input class="form-control me-2" type="search" id="MPH1">
+        <button class="btn btn-outline-success button-header-one">Alter H1</button>
+      </div>
+
+
+      <div class="d-flex" role="search" style="margin: 10px;">
+        <input class="form-control me-2" type="search"  id="MPP" placeholder="size">
+        <button class="btn btn-outline-success button-paragrafy">Alter paragrafy</button>
+      </div>
+
+      <div class="d-flex" role="search" style="margin: 10px;">
+        <input class="form-control me-2" type="search"  id="MPOL" placeholder="size" >
+        <button class="btn btn-outline-success button-ordened-list" onclick="">Alter Ordened List</button>
+      </div>
+
+      <div class="d-flex" role="search" style="margin: 10px;">
+        <input class="form-control me-2" type="search"  id="MPUL" placeholder="size">
+        <button class="btn btn-outline-success button-unordened-list" onclick="">Alter Unordened List</button>
+      </div>
+      <div class="d-flex" role="search" style="margin: 10px;">
+        <input class="form-control me-2" type="search"  id="MPBT" placeholder="size">
+        <button class="btn btn-outline-success button-button" onclick="">Alter Button</button>
+      </div>
+      <div class="d-flex" role="search" style="margin: 10px;">
+        <input class="form-control me-2" type="search"  id="MPT" placeholder="size">
+        <button class="btn btn-outline-success button-table" onclick="">Alter Table</button>
+      </div>
+      <div class="d-flex" role="search" style="margin: 10px;">
+        <input class="form-control me-2" type="search"  id="MPF" placeholder="size">
+        <button class="btn btn-outline-success button-form" onclick="">Alter Form</button>
+      </div>
+      <div class="d-flex" role="search" style="margin: 10px;">
+        <input class="form-control me-2" type="search"  id="MPD" placeholder="size">
+        <button class="btn btn-outline-success button-div" onclick="">Alter Div</button>
+      </div>
+      <div class="d-flex" role="search" style="margin: 10px;">
+        <input class="form-control me-2" type="search"  id="MPN" placeholder="size">
+        <button class="btn btn-outline-success button-nav" onclick="">Alter Nav</button>
+      </div>
+      <div class="d-flex" role="search" style="margin: 10px;">
+        <input class="form-control me-2" type="search"  id="MPM" placeholder="size">
+        <button class="btn btn-outline-success button-main" onclick="">Alter Main</button>
+      </div>
+  
+      <div class="d-flex" role="search" style="margin: 10px;">
+        <input class="form-control me-2" type="search"  id="MPB" placeholder="size">
+        <button class="btn btn-outline-success button-body" onclick="">Alter Body</button>
+      </div>
+
+      <div class="d-flex" role="search" style="margin: 10px;">
+        <input class="form-control me-2" type="search" placeholder="element  value" id="MPX">
+        <button class="btn btn-outline-success button-element" onclick="">Alter X Element</button>
+      </div>
+      <p>elements available: h1Alter, pAlter, olAlter, ulAlter, buttonAlter, tableAlter, formAlter, divAlter, navAlter, mainAlter, bodyAlter</p>
+  </div>
+  
+  <!--Div Width Ids of Inputs: MIH1, MIP,  MIOL, MIUL,  MIBT,  MIT,  MIF,  MID,  MIN,  MIM,  MIB,  MIX-->
+
+  <div class="collapse indent" data-bs-parent="#myGroup" id="Width">
+    <div class="d-flex" role="search" style="margin: 10px;" placeholder="size">
+        <input class="form-control me-2" type="search" id="MWH1">
+        <button class="btn btn-outline-success button-header-one">Alter H1</button>
+      </div>
+
+
+      <div class="d-flex" role="search" style="margin: 10px;">
+        <input class="form-control me-2" type="search"  id="MWP" placeholder="size">
+        <button class="btn btn-outline-success button-paragrafy">Alter paragrafy</button>
+      </div>
+
+      <div class="d-flex" role="search" style="margin: 10px;">
+        <input class="form-control me-2" type="search"  id="MWOL" placeholder="size" >
+        <button class="btn btn-outline-success button-ordened-list" onclick="">Alter Ordened List</button>
+      </div>
+
+      <div class="d-flex" role="search" style="margin: 10px;">
+        <input class="form-control me-2" type="search"  id="MWUL" placeholder="size">
+        <button class="btn btn-outline-success button-unordened-list" onclick="">Alter Unordened List</button>
+      </div>
+      <div class="d-flex" role="search" style="margin: 10px;">
+        <input class="form-control me-2" type="search"  id="MWBT" placeholder="size">
+        <button class="btn btn-outline-success button-button" onclick="">Alter Button</button>
+      </div>
+      <div class="d-flex" role="search" style="margin: 10px;">
+        <input class="form-control me-2" type="search"  id="MWT" placeholder="size">
+        <button class="btn btn-outline-success button-table" onclick="">Alter Table</button>
+      </div>
+      <div class="d-flex" role="search" style="margin: 10px;">
+        <input class="form-control me-2" type="search"  id="MWF" placeholder="size">
+        <button class="btn btn-outline-success button-form" onclick="">Alter Form</button>
+      </div>
+      <div class="d-flex" role="search" style="margin: 10px;">
+        <input class="form-control me-2" type="search"  id="MWD" placeholder="size">
+        <button class="btn btn-outline-success button-div" onclick="">Alter Div</button>
+      </div>
+      <div class="d-flex" role="search" style="margin: 10px;">
+        <input class="form-control me-2" type="search"  id="MWN" placeholder="size">
+        <button class="btn btn-outline-success button-nav" onclick="">Alter Nav</button>
+      </div>
+      <div class="d-flex" role="search" style="margin: 10px;">
+        <input class="form-control me-2" type="search"  id="MWM" placeholder="size">
+        <button class="btn btn-outline-success button-main" onclick="">Alter Main</button>
+      </div>
+  
+      <div class="d-flex" role="search" style="margin: 10px;">
+        <input class="form-control me-2" type="search"  id="MWB" placeholder="size">
+        <button class="btn btn-outline-success button-body" onclick="">Alter Body</button>
+      </div>
+
+      <div class="d-flex" role="search" style="margin: 10px;">
+        <input class="form-control me-2" type="search" placeholder="element  value" id="MWX">
+        <button class="btn btn-outline-success button-element" onclick="">Alter X Element</button>
+      </div>
+      <p>elements available: h1Alter, pAlter, olAlter, ulAlter, buttonAlter, tableAlter, formAlter, divAlter, navAlter, mainAlter, bodyAlter</p>
+  </div>
+
+  <!--Div Inner Ids of Inputs: MIH1, MIP, MIOL, MIUL, MIBT, MIT, MIF, MID, MIN, MIM, MIB, MIX-->
+
+  <div class="collapse indent" data-bs-parent="#myGroup" id="Inner">
+    <div class="d-flex" role="search" style="margin: 10px;" placeholder="text without 2 espaces for word">
+        <input class="form-control me-2" type="search" id="MIH1">
+        <button class="btn btn-outline-success button-header-one">Alter H1</button>
+      </div>
+
+
+      <div class="d-flex" role="search" style="margin: 10px;">
+        <input class="form-control me-2" type="search"  id="MIP" placeholder="text without 2 espaces for word">
+        <button class="btn btn-outline-success button-paragrafy">Alter paragrafy</button>
+      </div>
+
+      <div class="d-flex" role="search" style="margin: 10px;">
+        <input class="form-control me-2" type="search"  id="MIOL" placeholder="text without 2 espaces for word" >
+        <button class="btn btn-outline-success button-ordened-list" onclick="">Alter Ordened List</button>
+      </div>
+
+      <div class="d-flex" role="search" style="margin: 10px;">
+        <input class="form-control me-2" type="search"  id="MIUL" placeholder="text without 2 espaces for word">
+        <button class="btn btn-outline-success button-unordened-list" onclick="">Alter Unordened List</button>
+      </div>
+      <div class="d-flex" role="search" style="margin: 10px;">
+        <input class="form-control me-2" type="search"  id="MIBT" placeholder="text without 2 espaces for word">
+        <button class="btn btn-outline-success button-button" onclick="">Alter Button</button>
+      </div>
+      <div class="d-flex" role="search" style="margin: 10px;">
+        <input class="form-control me-2" type="search"  id="MIT" placeholder="text without 2 espaces for word">
+        <button class="btn btn-outline-success button-table" onclick="">Alter Table</button>
+      </div>
+      <div class="d-flex" role="search" style="margin: 10px;">
+        <input class="form-control me-2" type="search"  id="MIF" placeholder="text without 2 espaces for word">
+        <button class="btn btn-outline-success button-form" onclick="">Alter Form</button>
+      </div>
+      <div class="d-flex" role="search" style="margin: 10px;">
+        <input class="form-control me-2" type="search"  id="MID" placeholder="text without 2 espaces for word">
+        <button class="btn btn-outline-success button-div" onclick="">Alter Div</button>
+      </div>
+      <div class="d-flex" role="search" style="margin: 10px;">
+        <input class="form-control me-2" type="search"  id="MIN" placeholder="text without 2 espaces for word">
+        <button class="btn btn-outline-success button-nav" onclick="">Alter Nav</button>
+      </div>
+      <div class="d-flex" role="search" style="margin: 10px;">
+        <input class="form-control me-2" type="search"  id="MIM" placeholder="text without 2 espaces for word">
+        <button class="btn btn-outline-success button-main" onclick="">Alter Main</button>
+      </div>
+  
+      <div class="d-flex" role="search" style="margin: 10px;">
+        <input class="form-control me-2" type="search"  id="MIB" placeholder="text without 2 espaces for word">
+        <button class="btn btn-outline-success button-body" onclick="">Alter Body</button>
+      </div>
+
+      <div class="d-flex" role="search" style="margin: 10px;">
+        <input class="form-control me-2" type="search" placeholder="element  value" id="MIX">
+        <button class="btn btn-outline-success button-element" onclick="">Alter X Element</button>
+      </div>
+      <p>elements available: h1Alter, pAlter, olAlter, ulAlter, buttonAlter, tableAlter, formAlter, divAlter, navAlter, mainAlter, bodyAlter</p>
+  </div>
+
+  <!--Div Specific Ids of Inputs: MSH1, MSP, MSOL, MSUL, MSBT, MST, MSF, MSD, MSN, MSM, MIB, MIX-->
+
+  <div class="collapse indent" data-bs-parent="#myGroup" id="Specific">
+    <div class="d-flex" role="search" style="margin: 10px;" placeholder="style  value">
+        <input class="form-control me-2" type="search" id="MSH1">
+        <button class="btn btn-outline-success button-header-one">Alter H1</button>
+      </div>
+
+      <div class="d-flex" role="search" style="margin: 10px;">
+        <input class="form-control me-2" type="search"  id="MSP" placeholder="style  value">
+        <button class="btn btn-outline-success button-paragrafy">Alter paragrafy</button>
+      </div>
+
+      <div class="d-flex" role="search" style="margin: 10px;">
+        <input class="form-control me-2" type="search"  id="MSOL" placeholder="style  value" >
+        <button class="btn btn-outline-success button-ordened-list" onclick="">Alter Ordened List</button>
+      </div>
+
+      <div class="d-flex" role="search" style="margin: 10px;">
+        <input class="form-control me-2" type="search"  id="MSUL" placeholder="style  value">
+        <button class="btn btn-outline-success button-unordened-list" onclick="">Alter Unordened List</button>
+      </div>
+      <div class="d-flex" role="search" style="margin: 10px;">
+        <input class="form-control me-2" type="search"  id="MSBT" placeholder="style  value">
+        <button class="btn btn-outline-success button-button" onclick="">Alter Button</button>
+      </div>
+      <div class="d-flex" role="search" style="margin: 10px;">
+        <input class="form-control me-2" type="search"  id="MST" placeholder="style  value">
+        <button class="btn btn-outline-success button-table" onclick="">Alter Table</button>
+      </div>
+      <div class="d-flex" role="search" style="margin: 10px;">
+        <input class="form-control me-2" type="search"  id="MSF" placeholder="style  value">
+        <button class="btn btn-outline-success button-form" onclick="">Alter Form</button>
+      </div>
+      <div class="d-flex" role="search" style="margin: 10px;">
+        <input class="form-control me-2" type="search"  id="MSD" placeholder="style  value">
+        <button class="btn btn-outline-success button-div" onclick="">Alter Div</button>
+      </div>
+      <div class="d-flex" role="search" style="margin: 10px;">
+        <input class="form-control me-2" type="search"  id="MSN" placeholder="style  value">
+        <button class="btn btn-outline-success button-nav" onclick="">Alter Nav</button>
+      </div>
+      <div class="d-flex" role="search" style="margin: 10px;">
+        <input class="form-control me-2" type="search"  id="MSM" placeholder="style  value">
+        <button class="btn btn-outline-success button-main" onclick="">Alter Main</button>
+      </div>
+  
+      <div class="d-flex" role="search" style="margin: 10px;">
+        <input class="form-control me-2" type="search"  id="MSB" placeholder="style  value">
+        <button class="btn btn-outline-success button-body" onclick="">Alter Body</button>
+      </div>
+
+      <div class="d-flex" role="search" style="margin: 10px;">
+        <input class="form-control me-2" type="search" placeholder="element  style  value" id="MSX">
+        <button class="btn btn-outline-success button-element" onclick="">Alter X Element</button>
+      </div>
+      <p>elements available: h1Alter, pAlter, olAlter, ulAlter, buttonAlter, tableAlter, formAlter, divAlter, navAlter, mainAlter, bodyAlter</p>
+      <p>Styles: <a href="https://www.w3schools.com/jsref/dom_obj_style.asp"> https://www.w3schools.com/jsref/dom_obj_style.asp </a></p>
+  </div>
+</div>
+
+</br>
+</br>
+</br>
+</br>
+</br>
+</br>
+</body>
+</html>
