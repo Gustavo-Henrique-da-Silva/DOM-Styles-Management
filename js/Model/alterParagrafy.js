@@ -46,3 +46,5 @@ function alterParagrafy(){
         MSP.value = "";
     } 
 }
+
+export{alterParagrafy};

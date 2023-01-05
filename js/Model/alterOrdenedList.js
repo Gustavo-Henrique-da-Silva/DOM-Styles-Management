@@ -45,3 +45,5 @@ function alterOrdenedList(){
         MSOL.value = "";
     }
 }
+
+export {alterOrdenedList};

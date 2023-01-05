@@ -1,6 +1,17 @@
 /* Div Color Ids of Buttons (Classes): button-header-one, button-paragrafy, button-ordened-list, button-unordened-list, button-table, button-form,
 button-div, button-nav  button-main, button-body, button-element*/
-
+import {alterHeader} from './Model/alterHeader.js';
+import {alterParagrafy} from './Model/alterParagrafy.js';
+import {alterOrdenedList} from './Model/alterOrdenedList.js';
+import {alterUnordenedList} from './Model/alterUnordenedList.js';
+import {alterButton} from './Model/alterButton.js';
+import {alterTable} from './Model/alterTable.js';
+import {alterForm} from './Model/alterForm.js';
+import {alterDiv} from './Model/alterDiv.js';
+import {alterNav} from './Model/alterNav.js';
+import {alterMain} from './Model/alterMain.js';
+import { alterBody } from './Model/alterBody.js';
+import {alterElement} from './Model/alterElement.js';
 
 
 

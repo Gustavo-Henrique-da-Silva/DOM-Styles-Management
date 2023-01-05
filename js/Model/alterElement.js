@@ -56,3 +56,5 @@ function alterElement(){
         MSX.value = "";
     }
 }
+
+export{alterElement};

@@ -1,5 +1,5 @@
 function alterButton(){
-    console.log(MBBT.value);
+    
     if(MCBT.value != ""){
         console.log("before: " + $("#buttonAlter").css("color"))
         $("#buttonAlter").css("color", MCBT.value);
@@ -46,3 +46,4 @@ function alterButton(){
         MSBT.value = "";
     }
 }
+export{alterButton};

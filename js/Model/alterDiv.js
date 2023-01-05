@@ -45,3 +45,5 @@ function alterDiv(){
         MSD.value = "";
     }
 }
+
+export{alterDiv};

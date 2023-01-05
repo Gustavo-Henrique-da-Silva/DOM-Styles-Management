@@ -45,3 +45,8 @@ function alterTable(){
         MST.value = "";
     }
 }
+export{alterTable};
+
+
+
+

@@ -46,3 +46,5 @@ function alterNav(){
         MSN.value = "";
     }
 }
+
+export {alterNav};

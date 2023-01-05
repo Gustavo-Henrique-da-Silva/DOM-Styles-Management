@@ -45,3 +45,5 @@ function alterUnordenedList(){
         MSUL.value = "";
     }
 }
+
+export {alterUnordenedList};

@@ -46,3 +46,5 @@ function alterMain(){
         MSH1.value = "";
     } 
 }
+
+export{alterMain};

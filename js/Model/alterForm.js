@@ -45,3 +45,5 @@ function alterForm(){
         MSF.value = "";
     }
 }
+
+export{alterForm};

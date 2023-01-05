@@ -47,6 +47,8 @@ function alterHeader(){
         MSH1.value = "";
     } 
 }
+
+export{alterHeader};
 /*
 Elements Alterable    H1     P     OL   UL    Button Table Form  DIV   NAV   MAIN  BODY Element Classes
 
